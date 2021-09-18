@@ -75,7 +75,7 @@ class PostsController extends AbstractController
 
     /**
      * @Route("/post/edit/{id}", name="edit_post")
-     * @Method("GET", "POST")
+     * @Method("GET", "PUT")
      */
     public function editPost(Request $request, $id):Response
     {
