@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Post{% endblock %}
+
+{% block body %}
+    <br /><br />
+    <div class="container" style="width: 45%;">
+        <h1 class="text-center">Edit Post</h1>
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+        <hr />
+        <a href="/show">Go Back</a>
+    </div>
+{% endblock %}
