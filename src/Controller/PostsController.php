@@ -16,6 +16,14 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 class PostsController extends AbstractController
 {
     /**
+     * @Route("/", name="index")
+     */
+    public function index()
+    {
+        return $this->redirectToRoute('show');
+    }
+
+    /**
      * @Route("/create", name="create")
      * @Method("GET", "POST")
      */
